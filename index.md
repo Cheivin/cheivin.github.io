@@ -4,7 +4,7 @@
 
 ### WORK EXPERIENCES
 
-- 尤果网 2019.11-now `Java Programmer`
+- 尤果网 2019.11-now `Backend Programmer`
 
 ### TECHNICAL SKILLS
 
