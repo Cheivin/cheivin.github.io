@@ -1,140 +1,205 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
-    <title>Cheivin site</title>
     <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <link rel="stylesheet" href="css/kube.min.css"/>
-    <link rel="stylesheet" href="css/font-awesome.min.css"/>
-    <link rel="stylesheet" href="css/custom.min.css"/>
+    <title>Cheivin</title>
+    <meta name="author" content="Cheivin"/>
+    <meta name="description" content="Cheivin — Go / Java / Rust 后端开发，个人主页"/>
     <link rel="shortcut icon" href="img/favicon.png"/>
-    <link href='https://fonts.googleapis.com/css?family=Playfair+Display+SC:700' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
-    <style>
-        .intro h1:before {
-            /* Edit this with your name or anything else */
-            content: 'Cheivin';
-        }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&family=Noto+Serif+SC:wght@600;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/custom.css"/>
 </head>
 <body>
-<!-- Navigation -->
-<div class="main-nav">
-    <div class="container">
-        <header class="group top-nav">
-            <div class="navigation-toggle" data-tools="navigation-toggle" data-target="#navbar-1">
-                <span class="logo">Cheivin</span>
-            </div>
-            <nav id="navbar-1" class="navbar item-nav">
-                <ul>
-                    <li class="active"><a href="#about">About</a></li>
-                    <li><a href="#experiences">Experiences</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <!--<li><a href="#achievements">Achievements</a></li>-->
-                </ul>
-            </nav>
-        </header>
-    </div>
-</div>
 
-<!-- Introduction -->
-<div class="intro section" id="about">
-    <div class="container">
-        <p>Hi, I’m Cheivin</p>
-        <div class="units-row units-split wrap">
-            <div class="unit-20">
-                <img src="img/ava.jpg" alt="Avatar">
-            </div>
-            <div class="unit-80">
-                <h1>I live in<br><span id="typed"></span></h1>
-            </div>
-            <p>
-                一个普通的程序员。
-            </p>
+<header class="nav">
+    <div class="nav-inner">
+        <a class="brand" href="#about"><span class="brand-seal" aria-hidden="true">C</span><span class="brand-txt">Cheivin</span></a>
+        <nav class="nav-links">
+            <a href="#about" class="active"><i>01</i>About</a>
+            <a href="#experiences"><i>02</i>Experiences</a>
+            <a href="#projects"><i>03</i>Open Source</a>
+            <a href="#skills"><i>04</i>Skills</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <!-- About -->
+    <section class="hero" id="about">
+        <div class="wm" aria-hidden="true">CHEIVIN</div>
+        <div class="container">
+            <img class="ava rise d1" src="img/ava.jpg" alt="Avatar"/>
+            <p class="kicker rise d2">Hi, I’m Cheivin<span class="seal" aria-hidden="true">C</span></p>
+            <h1 class="headline rise d3">I live in<br/><span class="typer-wrap"><span id="typer">Chengdu</span><span class="caret" aria-hidden="true"></span></span></h1>
+            <p class="intro rise d4">一个写了九年服务端代码的普通程序员。主力 <b>Go</b>，此前长期写 Java，偶尔用 Rust 折腾感兴趣的东西，最近一头扎进 AI 工程，自己动手写工具类 Agent。</p>
         </div>
-    </div>
-</div>
+    </section>
 
-<!-- Work Experience -->
-<div class="work section second" id="experiences">
-    <div class="container">
-        <h1>Work<br>Experiences</h1>
-        <ul class="work-list">
-            <li>2019.11-now</li>
-            <li><a href="https://ugirls.fm" target="_blank">尤果网</a></li>
-            <li>Java Programmer</li>
-        </ul>
-    </div>
-</div>
+    <!-- Work Experiences -->
+    <section class="section container" id="experiences">
+        <header class="sec-head"><span class="sec-no">02</span><h2>Work<br/>Experiences</h2></header>
+        <ol class="xp">
+            <li class="reveal">
+                <span class="xp-date"><span class="now" aria-hidden="true"></span>2025.09 — 至今</span>
+                <div class="xp-body">
+                    <h3>Go 开发工程师<span class="xp-tag">即时通讯平台</span></h3>
+                </div>
+            </li>
+            <li class="reveal">
+                <span class="xp-date">2019.11 — 2025.08</span>
+                <div class="xp-body">
+                    <h3>后端开发工程师<span class="xp-tag">支付 / 结算 / 用户体系</span></h3>
+                </div>
+            </li>
+            <li class="reveal">
+                <span class="xp-date">2018.07 — 2019.10</span>
+                <div class="xp-body">
+                    <h3>Java 开发工程师<span class="xp-tag">IM / Web 应用</span></h3>
+                </div>
+            </li>
+        </ol>
+    </section>
 
-<!-- Award & Achievements -->
-<!--<div class="award section second" id="achievements">
-    <div class="container">
-        <h1>Award &amp;<br>Achievements</h1>
-        <ul class="award-list list-flat">
-            <li>Time</li>
-            <li>Title</li>
-            <li>Content</li>
-        </ul>
-    </div>
-</div>-->
-<!-- Technical Skills -->
-<div class="skills section second" id="skills">
-    <div class="container">
-        <h1>Technical<br>Skills</h1>
-        <ul class="skill-list list-flat">
-            <li>Program Language</li>
-            <li>Java / Go / HCJ</li>
-        </ul>
-        <ul class="skill-list list-flat">
-            <li>Framework</li>
-            <li>Springboot / Gin / Nuxt</li>
-        </ul>
-        <ul class="skill-list list-flat">
-            <li>Database</li>
-            <li>MySQL / Redis / MongoDB</li>
-        </ul>
-    </div>
-</div>
+    <!-- Open Source -->
+    <section class="section container" id="projects">
+        <header class="sec-head"><span class="sec-no">03</span><h2>Open<br/>Source</h2></header>
+        <a class="oss reveal" href="https://github.com/Cheivin/doge-agent" target="_blank" rel="noopener">
+            <div>
+                <h3>doge-agent<span class="arrow">↗</span></h3>
+                <p>单二进制工具类 AI Agent：自研 agent loop、工具编排与权限体系，TUI / Web / 桌面三端一体，支持 MCP 与 P2P 组网</p>
+            </div>
+            <span class="lang">Go</span>
+        </a>
+        <a class="oss reveal" href="https://github.com/Cheivin/di" target="_blank" rel="noopener">
+            <div>
+                <h3>di<span class="arrow">↗</span></h3>
+                <p>类型托管与配置注入的轻量依赖注入框架，附脚手架 dio</p>
+            </div>
+            <span class="lang">Go</span>
+        </a>
+    </section>
+
+    <!-- Technical Skills -->
+    <section class="section container" id="skills">
+        <header class="sec-head"><span class="sec-no">04</span><h2>Technical<br/>Skills</h2></header>
+        <div class="skill-group reveal">
+            <h3 class="skill-label">Languages</h3>
+            <ul class="chips">
+                <li>Go</li>
+                <li>Java</li>
+                <li>Rust</li>
+            </ul>
+        </div>
+        <div class="skill-group reveal">
+            <h3 class="skill-label">Backend</h3>
+            <ul class="chips">
+                <li>Gin</li>
+                <li>Gorm</li>
+                <li>gRPC</li>
+                <li>Spring Boot</li>
+            </ul>
+        </div>
+        <div class="skill-group reveal">
+            <h3 class="skill-label">Storage &amp; MQ</h3>
+            <ul class="chips">
+                <li>MySQL</li>
+                <li>Redis</li>
+                <li>MongoDB</li>
+                <li>Kafka</li>
+                <li>RocketMQ</li>
+            </ul>
+        </div>
+        <div class="skill-group reveal">
+            <h3 class="skill-label">AI Engineering</h3>
+            <ul class="chips">
+                <li>Agent 开发</li>
+                <li>上下文工程</li>
+                <li>MCP</li>
+                <li>会话管理</li>
+            </ul>
+        </div>
+        <div class="skill-group reveal">
+            <h3 class="skill-label">Infra</h3>
+            <ul class="chips">
+                <li>Docker</li>
+                <li>Linux</li>
+                <li>CI/CD</li>
+            </ul>
+        </div>
+    </section>
+</main>
 
 <footer>
-    <div class="container">
-        <div class="units-row">
-            <div class="unit-50">
-                <ul class="social list-flat right">
-                    <li><a href="#"><i class="fa fa-send"></i></a></li>
-                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                    <li><a href="#"><i class="fa fa-behance"></i></a></li>
-                </ul>
-            </div>
-        </div>
+    <div class="container foot">
+        <span class="mono">© <span id="year">2026</span> Cheivin</span>
+        <a class="gh" href="https://github.com/Cheivin" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+        </a>
     </div>
 </footer>
 
-<!-- Javascript -->
-<script src="js/jquery.min.js"></script>
-<script src="js/typed.min.js"></script>
-<script src="js/kube.min.js"></script>
-<script src="js/site.js"></script>
 <script>
-    function newTyped() {
-    }
+    (function () {
+        var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+        document.getElementById('year').textContent = new Date().getFullYear();
 
-    $(function () {
-        $("#typed").typed({
-            // Change to edit type effect
-            strings: ["everywhere"],
+        // typewriter
+        var el = document.getElementById('typer');
+        var word = 'Chengdu';
+        if (reduce) {
+            el.textContent = word;
+        } else {
+            el.textContent = '';
+            var i = 0, deleting = false;
+            (function tick() {
+                if (!deleting) {
+                    i++;
+                    el.textContent = word.slice(0, i);
+                    if (i === word.length) { deleting = true; return setTimeout(tick, 2200); }
+                    return setTimeout(tick, 110);
+                }
+                i--;
+                el.textContent = word.slice(0, i);
+                if (i === 0) { deleting = false; return setTimeout(tick, 500); }
+                setTimeout(tick, 45);
+            })();
+        }
 
-            typeSpeed: 90, backDelay: 700, contentType: "html", loop: !0, resetCallback: function () {
-                newTyped()
-            }
-        }), $(".reset").click(function () {
-            $("#typed").typed("reset")
-        })
-    });
+        // scroll reveal
+        var revealed = document.querySelectorAll('.reveal');
+        if (reduce || !('IntersectionObserver' in window)) {
+            revealed.forEach(function (n) { n.classList.add('in'); });
+        } else {
+            var io = new IntersectionObserver(function (entries) {
+                entries.forEach(function (e) {
+                    if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+                });
+            }, { threshold: 0.12, rootMargin: '0px 0px -40px' });
+            revealed.forEach(function (n) { io.observe(n); });
+        }
+
+        // nav active state
+        var links = document.querySelectorAll('.nav-links a');
+        var byId = {};
+        links.forEach(function (a) { byId[a.getAttribute('href').slice(1)] = a; });
+        if ('IntersectionObserver' in window) {
+            var spy = new IntersectionObserver(function (entries) {
+                entries.forEach(function (e) {
+                    if (e.isIntersecting && byId[e.target.id]) {
+                        links.forEach(function (a) { a.classList.remove('active'); });
+                        byId[e.target.id].classList.add('active');
+                    }
+                });
+            }, { rootMargin: '-45% 0px -50% 0px' });
+            ['about', 'experiences', 'projects', 'skills'].forEach(function (id) {
+                var s = document.getElementById(id);
+                if (s) spy.observe(s);
+            });
+        }
+    })();
 </script>
 </body>
 </html>
